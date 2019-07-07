@@ -31,5 +31,5 @@ calcRunningTimeSeconds%=60
 breakfastTimeMinutes=startMinutes+calcRunningTimeMinutes
 breakfastTimeHours=startHours+breakfastTimeMinutes//60
 breakfastTimeMinutes%=60
-print('3. result',breakfastTimeHours,':',breakfastTimeMinutes)
+print('3. result:',breakfastTimeHours,':',breakfastTimeMinutes)
 
