@@ -35,13 +35,13 @@ do_twice(print_spam,'hello')
 def do_twice(bruce):
     print(bruce)
     print(bruce)
-# Usate la versione modificata di do_twice per chiamare
+#.4 Usate la versione modificata di do_twice per chiamare
 # do_twice per due volte, passando 'spam' come argomento.
 
 print('')
 do_twice(print_twice,'spam')
 
-# Definite una nuova funzione di nome fai_quattro che richieda un
+#.5 Definite una nuova funzione di nome fai_quattro che richieda un
 # oggetto funzione e un valore e chiami la funzione per 4 volte,
 # passando il valore come argomento. Dovrebbero esserci solo due
 # istruzioni nel corpo di questa funzione, non quattro.
