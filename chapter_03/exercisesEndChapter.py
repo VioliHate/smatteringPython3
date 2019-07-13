@@ -30,9 +30,10 @@ def print_spam(valore):
 
 #.3 Copiate nel vostro script la definizione di print_twice che abbiamo
 # visto nel corso di questo capitolo.
+
 print('')
 do_twice(print_spam,'hello')
-def do_twice(bruce):
+def print_twice(bruce):
     print(bruce)
     print(bruce)
 #.4 Usate la versione modificata di do_twice per chiamare
@@ -51,3 +52,108 @@ def do_four(f,value):
     do_twice(f,value)
 print('')
 do_four(print_twice,'spam')
+
+
+#3.3 Scrivete una funzione che disegni una griglia come questa:
+"""
++ - - - - + - - - - +
+|         |         |
+|         |         |
+|         |         |
+|         |         |
++ - - - - + - - - - +
+|         |         |
+|         |         |
+|         |         |
+|         |         |
++ - - - - + - - - - +
+"""
+#.1
+print(end='\n\n')
+
+def do_twice(f):
+    f()
+    f()
+
+def do_four(f):
+    do_twice(f)
+    do_twice(f)
+
+def printSquare():
+    printHoLevels()
+    do_four(printVeLevels)
+    printHoLevels()
+    do_four(printVeLevels)
+    printHoLevels()
+
+def printHorizontalLevel():
+    print('+ - - - -', end=' ')
+
+
+def printVerticalLevel():
+    print('|        ', end=' ')
+
+def printHoLevels():
+    do_twice(printHorizontalLevel)
+    print('+')
+    
+def printVeLevels():
+    do_twice(printVerticalLevel)
+    print('|')
+    
+printSquare()
+print(end='\n\n')
+    
+#.2 Scrivete una funzione che disegni una griglia simile, con quattro righe e quattro colonne.
+
+def printHorizontal():
+    do_four(printVerticalLevel)
+    printHorizontalLevel
+    print('|')
+
+
+def printBigSquare():
+    do_four(printHorizontalLevel)
+    print('+')
+    do_four(printHorizontal)
+    do_four(printHorizontalLevel)
+    print('+')
+    do_four(printHorizontal)
+    do_four(printHorizontalLevel)
+    print('+')
+    do_four(printHorizontal)
+    do_four(printHorizontalLevel)
+    print('+')
+    do_four(printHorizontal)
+    do_four(printHorizontalLevel)
+    print('+')
+
+
+printBigSquare()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
