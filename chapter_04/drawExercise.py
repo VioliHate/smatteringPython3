@@ -101,3 +101,4 @@ drawArch(bob,50,360)
 
 
 turtle.mainloop()
+turtle.bye()
